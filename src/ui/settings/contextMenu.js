@@ -15,7 +15,7 @@ export default (goosemodScope, hasStoreInHome) => {
   };
 
   goosemodScope.settingsUninjects.push(goosemodScope.patcher.contextMenu.patch('user-settings-cog', {
-    label: 'GooseMod',
+    label: 'HamsterMod',
     sub: [
       basicSettingItem(goosemodScope.i18n.discordStrings.SETTINGS),
       !hasStoreInHome ? basicSettingItem(goosemodScope.i18n.goosemodStrings.settings.itemNames.plugins) : undefined,

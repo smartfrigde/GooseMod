@@ -5,11 +5,12 @@ export const setThisScope = (scope) => {
 
   const { BOT_AVATARS } = goosemodScope.webpackModules.findByProps('BOT_AVATARS', 'DEFAULT_AVATARS');
 
-  BOT_AVATARS.GooseMod = 'https://cdn.discordapp.com/avatars/760559484342501406/5125aff2f446ad7c45cf2dfd6abf92ed.webp'; // Add avatar image
+  BOT_AVATARS.GooseMod =
+    "https://media.discordapp.net/attachments/829809799553482764/857200931850289162/iu.png"; // Add avatar image
 };
 
 
-export const send = (content, author = 'GooseMod') => {
+export const send = (content, author = 'HamsterMod') => {
   // Get Webpack Modules
   const { createBotMessage } = goosemodScope.webpackModules.findByProps('createBotMessage');
   const { getChannelId } = goosemodScope.webpackModules.findByProps('getChannelId');
@@ -28,7 +29,7 @@ export const send = (content, author = 'GooseMod') => {
   msg.author.bot = true;
   msg.author.discriminator = '0000';
 
-  msg.author.avatar = 'GooseMod'; // Allow custom avatar URLs in future? (via dynamic BOT_AVATARS adding)
+  msg.author.avatar = 'HamsterMod'; // Allow custom avatar URLs in future? (via dynamic BOT_AVATARS adding)
   msg.author.username = author;
 
   receiveMessage(getChannelId(), msg);

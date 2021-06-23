@@ -83,8 +83,8 @@ export default (goosemodScope, gmSettings) => {
     {
       type: 'toggle',
 
-      text: 'GooseMod Change Log',
-      subtext: 'Show GooseMod "Change Log" setting',
+      text: 'HamsterMod Change Log',
+      subtext: 'Show HamsterMod "Change Log" setting',
 
       onToggle: (c) => changeSetting('changelog', c),
       isToggled: () => gmSettings.get().changelog
@@ -94,7 +94,7 @@ export default (goosemodScope, gmSettings) => {
       type: 'toggle',
 
       text: 'Main Separators',
-      subtext: 'Show separators between main GooseMod settings',
+      subtext: 'Show separators between main HamsterMod settings',
 
       onToggle: (c) => changeSetting('separators', c),
       isToggled: () => gmSettings.get().separators
@@ -186,12 +186,12 @@ export default (goosemodScope, gmSettings) => {
     {
       type: 'text-and-danger-button',
       
-      text: 'Reset GooseMod',
-      subtext: 'Resets GooseMod completely: removes all preferences and modules; like a first-time install',
+      text: 'Reset HamsterMod',
+      subtext: 'Resets HamsterMod completely: removes all preferences and modules; like a first-time install',
       buttonText: 'Reset',
 
       onclick: async () => {
-        if (await goosemodScope.confirmDialog('Reset', 'Reset GooseMod', 'Confirming will completely reset GooseMod, removing all preferences and modules; as if you had installed GooseMod for the first time. This is irreversible.')) {
+        if (await goosemodScope.confirmDialog('Reset', 'Reset HamsterMod', 'Confirming will completely reset HamsterMod, removing all preferences and modules; as if you had installed GooseMod for the first time. This is irreversible.')) {
           goosemodScope.remove();
           window.location.reload();
         }
