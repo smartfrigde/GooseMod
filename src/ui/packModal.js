@@ -8,7 +8,7 @@ let themes = [
   'Dracula Theme',
   'Darkest Theme',
   'Solarized Dark Theme',
-  //'Slate'
+  'Revert Rebrand'
 ];
 
 let packs = [
