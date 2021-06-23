@@ -12,12 +12,12 @@ const applicationId = '827187782140428288';
 export const add = (name, description, execute, options = []) => {
   const mod = getModule();
 
-  if (!mod.BUILT_IN_SECTIONS.find((x) => x.name === 'GooseMod')) { // If no GooseMod section, create it
+  if (!mod.BUILT_IN_SECTIONS.find((x) => x.name === 'HamsterMod')) { // If no GooseMod section, create it
     mod.BUILT_IN_SECTIONS.push({
       id: applicationId,
       icon: '7f274cc3c1216505238ce047ce6e35e9', // Avatar file name for application
 
-      name: 'GooseMod',
+      name: 'HamsterMod',
       type: 1
     });
   }

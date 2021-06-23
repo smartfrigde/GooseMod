@@ -174,8 +174,9 @@ const ids = {
     '202740603790819328', // Snow Fox / Lisa
   ],
 
-  dev: [ // People actively developing GooseMod itself
+  dev: [ // People actively developing HamsterMod itself
     '506482395269169153', // Ducko
+    '424639027606585356' // smartfridge
   ],
 
   translator: [ // People who have translated GooseMod to other languages

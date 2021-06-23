@@ -7,7 +7,7 @@ export default (goosemodScope, gmSettings) => {
   let oldItems = goosemodScope.settings.items;
   goosemodScope.settings.items = [];
 
-  goosemodScope.settings.createHeading('GooseMod');
+  goosemodScope.settings.createHeading('HamsterMod');
 
   const changeSetting = async (key, value) => {
     switch (key) {
@@ -52,7 +52,7 @@ export default (goosemodScope, gmSettings) => {
           let main = true;
 
           goosemodScope.settings.items = goosemodScope.settings.items.filter((x, i) => {
-            if (goosemodScope.settings.items[i + 1] && goosemodScope.settings.items[i + 1][1] && goosemodScope.settings.items[i + 1][1] === 'GooseMod Modules') main = false;
+            if (goosemodScope.settings.items[i + 1] && goosemodScope.settings.items[i + 1][1] && goosemodScope.settings.items[i + 1][1] === 'HamsterMod Modules') main = false;
 
             return !(x[0] === 'separator' && main);
           });
@@ -115,7 +115,7 @@ export default (goosemodScope, gmSettings) => {
       type: 'toggle',
 
       text: 'Store In Home',
-      subtext: 'Put GooseMod Store options in home instead of in settings, <strong>requires refresh</strong>',
+      subtext: 'Put HamsterMod Store options in home instead of in settings, <strong>requires refresh</strong>',
 
       onToggle: (c) => changeSetting('home', c),
       isToggled: () => gmSettings.get().home
@@ -146,7 +146,7 @@ export default (goosemodScope, gmSettings) => {
 
       experimental: true,
       text: 'Development Channel',
-      subtext: 'Use experimental development GooseMod builds, <strong>requires refresh</strong>',
+      subtext: 'Use experimental development HamsterMod builds, <strong>requires refresh</strong>',
 
       onToggle: (c) => changeSetting('devchannel', c),
       isToggled: () => localStorage.getItem('goosemodUntetheredBranch') === 'dev'
@@ -171,8 +171,8 @@ export default (goosemodScope, gmSettings) => {
     {
       type: 'toggle',
 
-      text: 'GooseMod Badges',
-      subtext: 'Shows GooseMod\'s badges',
+      text: 'HamsterMod/GooseMod Badges',
+      subtext: 'Shows GooseMod\'s and HamsterMod badges',
 
       onToggle: (c) => changeSetting('gmBadges', c),
       isToggled: () => gmSettings.get().gmBadges
@@ -191,7 +191,7 @@ export default (goosemodScope, gmSettings) => {
       buttonText: 'Reset',
 
       onclick: async () => {
-        if (await goosemodScope.confirmDialog('Reset', 'Reset HamsterMod', 'Confirming will completely reset HamsterMod, removing all preferences and modules; as if you had installed GooseMod for the first time. This is irreversible.')) {
+        if (await goosemodScope.confirmDialog('Reset', 'Reset HamsterMod', 'Confirming will completely reset HamsterMod, removing all preferences and modules; as if you had installed HamsterMod for the first time. This is irreversible.')) {
           goosemodScope.remove();
           window.location.reload();
         }
@@ -202,7 +202,7 @@ export default (goosemodScope, gmSettings) => {
       type: 'text-and-danger-button',
 
       text: 'Purge Caches',
-      subtext: 'Purges (completely removes) most caches GooseMod uses',
+      subtext: 'Purges (completely removes) most caches HamsterMod uses',
       buttonText: 'Purge',
 
       onclick: async () => {

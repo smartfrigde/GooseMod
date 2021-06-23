@@ -5,7 +5,7 @@ export const setThisScope = (scope) => {
 
   const { BOT_AVATARS } = goosemodScope.webpackModules.findByProps('BOT_AVATARS', 'DEFAULT_AVATARS');
 
-  BOT_AVATARS.GooseMod =
+  BOT_AVATARS.HamsterMod =
     "https://media.discordapp.net/attachments/829809799553482764/857200931850289162/iu.png"; // Add avatar image
 };
 

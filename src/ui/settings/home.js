@@ -183,14 +183,14 @@ export default (goosemodScope) => {
                   position: 'top',
                   color: 'primary',
   
-                  text: 'GooseMod Store Repo'
+                  text: 'HamsterMod Store Repo'
                 }, ({
                   onMouseLeave,
                   onMouseEnter
                 }) =>
                   React.createElement(FlowerStar, {
                     className: "verified-1eC5dy background-2uufRq disableColor-2z9rkr",
-                    'aria-label': 'GooseMod Store Repo',
+                    'aria-label': 'HamsterMod Store Repo',
   
                     onMouseEnter,
                     onMouseLeave
@@ -290,14 +290,14 @@ export default (goosemodScope) => {
                         }
   
                         if (failed) {
-                          goosemodScope.showToast(`Invalid Repo`, { type: 'error', timeout: 5000, subtext: 'GooseMod Store' });
+                          goosemodScope.showToast(`Invalid Repo`, { type: 'error', timeout: 5000, subtext: 'HamsterMod Store' });
   
                           return;
                         }
   
-                        const confirmExternal = confirm(`External repos pose security risks as they are not controlled by GooseMod developers. We are not responsible for any dangers because of external repos added by users.\n\nIf you do not trust the owner of this repo do not use it as it could compromise your Discord install.\n\nPlease confirm adding this repo by pressing OK.`);
+                        const confirmExternal = confirm(`External repos pose security risks as they are not controlled by HamsterMod developers. We are not responsible for any dangers because of external repos added by users.\n\nIf you do not trust the owner of this repo do not use it as it could compromise your Discord install.\n\nPlease confirm adding this repo by pressing OK.`);
                         if (!confirmExternal) {
-                          goosemodScope.showToast(`Cancelled Adding Repo`, { type: 'danger', timeout: 5000, subtext: 'GooseMod Store' });
+                          goosemodScope.showToast(`Cancelled Adding Repo`, { type: 'danger', timeout: 5000, subtext: 'HamsterMod Store' });
   
                           return;
                         }
