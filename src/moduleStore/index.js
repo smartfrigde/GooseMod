@@ -131,7 +131,7 @@ export default {
 
       const calculatedHash = await sha512(jsCode);
       if (calculatedHash !== moduleInfo.hash) {
-        goosemodScope.showToast(`Cancelled importing of ${moduleName} due to hash mismatch`, { timeout: 2000, type: 'danger', subtext: 'GooseMod Store' });
+        goosemodScope.showToast(`Cancelled importing of ${moduleName} due to hash mismatch`, { timeout: 2000, type: 'danger', subtext: 'HamsterMod Store' });
 
         console.warn('Hash mismatch', calculatedHash, moduleInfo.hash);
         return;
@@ -180,7 +180,7 @@ export default {
 
       // if (goosemodScope.settings.isSettingsOpen() && !goosemodScope.initialImport) goosemodScope.settings.createFromItems();
     } catch (e) {
-      goosemodScope.showToast(`Failed to import module ${moduleName}`, { timeout: 2000, type: 'error', subtext: 'GooseMod Store' });
+      goosemodScope.showToast(`Failed to import module ${moduleName}`, { timeout: 2000, type: 'error', subtext: 'HamsterMod Store' });
       console.error(e);
     }
   },
