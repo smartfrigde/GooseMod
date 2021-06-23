@@ -50,7 +50,7 @@ export default {
       if (shouldHandleLoadingText) goosemodScope.updateLoadingScreen(`Updating modules...\n${m}`);
 
       updatePromises.push(goosemodScope.moduleStoreAPI.importModule(m, goosemodScope.moduleSettingsStore.checkDisabled(m)).then(async () => {
-        goosemodScope.showToast(`Updated ${m}`, { timeout: 5000, type: 'success', subtext: 'GooseMod Store' })
+        goosemodScope.showToast(`Updated ${m}`, { timeout: 5000, type: 'success', subtext: 'HamsterMod Store' })
       }));
     }
 
@@ -110,7 +110,7 @@ export default {
           enabled: repo.enabled
         });
       } catch (e) { // Failed fetching repo - do not error out and cause loading lockup
-        goosemodScope.showToast(`Failed to get repo: ${repo.url}`, { timeout: 5000, type: 'error', subtext: 'GooseMod Store' }); // Show error toast to user so they know
+        goosemodScope.showToast(`Failed to get repo: ${repo.url}`, { timeout: 5000, type: 'error', subtext: 'HamsterMod Store' }); // Show error toast to user so they know
       }
     }));
 

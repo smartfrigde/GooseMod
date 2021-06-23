@@ -25,7 +25,7 @@ export const show = async () => {
   await sleep(300);
 
   const customTweaks = () => {
-    document.querySelector('.modal-3O0aXp .size20-17Iy80').textContent = `GooseMod ${version}`; // Set changelog modal title
+    document.querySelector('.modal-3O0aXp .size20-17Iy80').textContent = `HamsterMod ${version}`; // Set changelog modal title
 
     document.querySelector('.modal-3O0aXp .footer-2gL1pp').remove(); // Remove footer of modal with social media
   };

@@ -76,7 +76,7 @@ export default (goosemodScope, gmSettings) => {
 
     let goosemodVersion = React.cloneElement(versionInfoEl.props.children[0]);
 
-    goosemodVersion.props.children[0] = 'GooseMod';
+    goosemodVersion.props.children[0] = 'HamsterMod';
     goosemodVersion.props.children[2] = goosemodScope.versioning.version;
 
     goosemodVersion.props.children[4].props.children[1] = goosemodScope.versioning.hash.substring(0, 7);
@@ -85,7 +85,7 @@ export default (goosemodScope, gmSettings) => {
 
     let untetheredVersion = React.cloneElement(versionInfoEl.props.children[1] || versionInfoEl.props.children[2]);
 
-    untetheredVersion.props.children[0] = 'GooseMod Untethered ';
+    untetheredVersion.props.children[0] = 'HamsterMod Untethered ';
     untetheredVersion.props.children[1] = goosemodScope.untetheredVersion || 'N/A';
 
     goosemodVersionInfo.props.children.push(untetheredVersion);

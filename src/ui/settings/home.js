@@ -365,7 +365,7 @@ export default (goosemodScope) => {
   let themeContent = goosemodScope.settings._createItem(themeSetting[1], themeSetting[2], false);
 
   goosemodScope.settingsUninjects.push(goosemodScope.patcher.patch(ConnectedPrivateChannelsList, 'default', (_args, res) => {
-    if (res.props.children.slice(3).find((x) => x?.toString()?.includes('GooseMod'))) return;
+    if (res.props.children.slice(3).find((x) => x?.toString()?.includes('HamsterMod'))) return;
 
     setTimeout(() => {
       document.querySelector(`.scroller-1JbKMe`).addEventListener('click', (e) => {
@@ -393,7 +393,7 @@ export default (goosemodScope) => {
     },
       React.createElement('span', {
         className: HeaderClasses.headerText
-      }, 'GooseMod'),
+      }, 'HamsterMod'),
 
       React.createElement('div', {
         className: `${HeaderClasses.privateChannelRecipientsInviteButtonIcon} ${IconClasses.iconWrapper} ${IconClasses.clickable}`,

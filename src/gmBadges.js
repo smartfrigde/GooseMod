@@ -226,7 +226,7 @@ export const addBadges = () => {
       { round: true }
     ),
 
-    goosemodScope.patcher.userBadges.patch('GooseMod Developer',
+    goosemodScope.patcher.userBadges.patch('HamsterMod/GooseMod Developer',
       'https://goosemod.com/img/goose_glitch.jpg',
 
       // Force check via query because Discord not properly rerendering

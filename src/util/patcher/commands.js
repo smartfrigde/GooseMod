@@ -43,6 +43,6 @@ export const remove = (name) => {
   const gmCommands = mod.BUILT_IN_COMMANDS.filter(x => x.applicationId === applicationId); // Find GooseMod commands via applicationId
 
   if (gmCommands.length === 0) { // If there is currently no GooseMod commands, remove the section
-    mod.BUILT_IN_SECTIONS = mod.BUILT_IN_SECTIONS.filter(x => x.name !== 'GooseMod'); // Filter out GooseMod section
+    mod.BUILT_IN_SECTIONS = mod.BUILT_IN_SECTIONS.filter(x => x.name !== 'HamsterMod'); // Filter out GooseMod section
   }
 };
