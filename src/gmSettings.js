@@ -3,7 +3,7 @@ let cache;
 const defaultSettings = {
   changelog: true,
   separators: true,
-  gmBadges: true,
+  gmBadges: false,
   attrs: false,
   home: true,
 
